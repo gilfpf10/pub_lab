@@ -13,14 +13,11 @@ class PubTest < MiniTest::Test
     @beer = Drink.new("beer", 2.5, 1 )
     @food1 = Food.new("burger",5.0,1)
     @food2 = Food.new("carrot",1, 0.5)
-    food1_name = @food1.name
-    food2_name = @food2.name
-    beer_name = @beer.name
-    wine_name = @wine.name
 
-    @brel = Pub.new("brel", 1000,
-      {beer_name: 3,wine_name: 5},
-      {food1_name: 10, food2_name:100})
+
+      @brel = Pub.new("brel", 1000,
+      {@beer => 3, @wine => 5},
+      {@food1 => 10, @food2 => 100})
       @customer1 = Customer.new("Gil", 20, 100)
 
 
@@ -43,6 +40,13 @@ class PubTest < MiniTest::Test
       actual = @brel.check_customer_drunkness(@customer1)
       assert_equal(expected, actual)
     end
+
+def test_stock_value
+  expected = 32.5
+  actual = @brel.stock_value
+  assert_equal(expected, actual)
+
+end
 
 
 

@@ -20,8 +20,15 @@ def check_customer_drunkness(customer)
 end
 
 
+def stock_value
 
+  total_value = 0
+  @stock_of_drinks.each do | drink,stock |
+    total_value += drink.price * stock
 
+  end
+return total_value
+end
 
 
 
