@@ -1,0 +1,18 @@
+How similar was your plan to the final program? Did you have to digress from your plan as the program developed?
+
+We planned the classes variables an methods ahead  we could do the extensions. Everything went to plan
+
+
+Does each of your classes follow the Single Responsibility principle? Or are any of your classes doing too much?
+
+The way we designed our classes did put most of the methods in 2 of them, and other 2 were not as populated.
+The 2 classes we have most functions are quite even.
+
+
+Did you practice TDD?
+
+Yes, all the methods were writen on TDD fashion
+
+Are each of your methods tested? Did you find anything difficult to test?
+
+Yes all methods were tested, some did require some thinking before we writen them therefore not many failures occured.

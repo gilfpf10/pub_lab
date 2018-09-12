@@ -15,20 +15,20 @@ class Pub
     return customer.age > 18
   end
 
-def check_customer_drunkness(customer)
-  return customer.drunkness > 10
-end
-
-
-def stock_value
-
-  total_value = 0
-  @stock_of_drinks.each do | drink,stock |
-    total_value += drink.price * stock
-
+  def check_customer_drunkness(customer)
+    return customer.drunkness > 10
   end
-return total_value
-end
+
+
+  def stock_value
+
+    total_value = 0
+    @stock_of_drinks.each do | drink,stock |
+      total_value += drink.price * stock
+
+    end
+    return total_value
+  end
 
 
 

@@ -15,7 +15,7 @@ class PubTest < MiniTest::Test
     @food2 = Food.new("carrot",1, 0.5)
 
 
-      @brel = Pub.new("brel", 1000,
+    @brel = Pub.new("brel", 1000,
       {@beer => 3, @wine => 5},
       {@food1 => 10, @food2 => 100})
       @customer1 = Customer.new("Gil", 20, 100)
@@ -41,12 +41,12 @@ class PubTest < MiniTest::Test
       assert_equal(expected, actual)
     end
 
-def test_stock_value
-  expected = 32.5
-  actual = @brel.stock_value
-  assert_equal(expected, actual)
+    def test_stock_value
+      expected = 32.5
+      actual = @brel.stock_value
+      assert_equal(expected, actual)
 
-end
+    end
 
 
 
