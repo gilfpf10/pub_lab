@@ -1,18 +1,17 @@
 How similar was your plan to the final program? Did you have to digress from your plan as the program developed?
 
-We planned the classes variables an methods ahead  we could do the extensions. Everything went to plan
-
+We planned the classes variables an methods ahead  we could do the extensions. Everything went to plan.
+The plan consisted in 4 boxes representing 4 diferent classes, named Pub, Food, Customer and drink.
 
 Does each of your classes follow the Single Responsibility principle? Or are any of your classes doing too much?
 
-The way we designed our classes did put most of the methods in 2 of them, and other 2 were not as populated.
-The 2 classes we have most functions are quite even.
-
+The way we designed our classes did put most of the methods in 2 of them "Pub and Customer", the other 2 were not as populated.
+Pub and customer were well balanced.
 
 Did you practice TDD?
 
-Yes, all the methods were writen on TDD fashion
+Yes, all the methods were written on TDD fashion. 4 TDD files were created to test the respective classes.
 
 Are each of your methods tested? Did you find anything difficult to test?
 
-Yes all methods were tested, some did require some thinking before we writen them therefore not many failures occured.
+Yes all methods were tested, we planned the methods before implementing so we didn't have to deal with many failures.
